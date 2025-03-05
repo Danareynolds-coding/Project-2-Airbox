@@ -62,6 +62,7 @@
      background-color: #262336;
      padding: 0.5px;
      border: 0px transparent;
+     margin: 10px;
     
  } 
  /* END NAV END NAV END NAV */
@@ -72,6 +73,7 @@
     padding-top:20px;
     padding-bottom: 30px;
     background-color: #262336;
+    font-family: "Cabin",Arial, San-serif;
  }
  
  h1{
@@ -111,7 +113,7 @@
  /* END TITLE SECTION END TITLE SECTION */
 
 .circle-container{
-       
+    font-family: "Cabin", Arial, san-serif;
     width:100%;
     background-color:#f29b66;
     padding:10px;
@@ -119,19 +121,20 @@
 .circle{
     display:flex;
     justify-content: space-around;
+    background-size: 100%;
             
 .circle1{
     background-color: #6f6c8a;
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background-image:url(../images/cogs.png);
+    background-image:url(../images/cogp2.png);
 
 }
         
 .circle2{
     background-color: #6f6c8a;
-    background-image:url(../images/globe.png);
+    background-image:url(../images/project2\ \(1\).png);
     height: 60px;
     width: 60px;
     border-radius: 30px;
@@ -141,19 +144,20 @@
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background-image: url(../images/cloud.jpg);
+    background-image: url(../images/cloudimg.png);
 }
 .circle4{
     background-color: #6f6c8a;
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background-image: url(../images/phone.jpg);
+    background-image: url(../images/phoneimg.png);
 }
 }
 
 /*   ******************************* */
 .services-section{
+        font-family: "Cabin", Arial, sans-serif;
         display:flex;
         flex-direction:row;
         justify-content:space-evenly;
@@ -172,6 +176,7 @@
      
      .services-section h2{
         text-align: center;
+        font-family:"Cabin", Arial, San-serif;
         font-size: 30px;
         text-align: center;
         color: #ffffff;
@@ -203,20 +208,18 @@
  }
  
 .pricing-section .white .sign-up {
-    display:contents;
+    display:flex;
     font-size: 16px;
-    
-    align-items: center;
-     }
-     button{
-        background-color: #f18752;
+    justify-content: center;
+}
+button{
+    background-color: #f18752;
     border:1px solid  #f18752;
     border-radius: 5px;
     color:#ffffff;
      }
  
  .mini-b1{
-        
     text-align: center;
     background-image:linear-gradient(to bottom, #cecdd3, #a49f9f);
     background-size: 100%;
@@ -225,7 +228,7 @@
     -webkit-text-fill-color:transparent;
     -moz-text-fill-color: transparent;
     border-bottom: 2px solid white;
-    padding:10px;
+    padding:20px;
  }
  .mini{
     background-color: #6f6c8a;
@@ -235,15 +238,23 @@
  .mini-price{
     color:#ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
  }
+ .mini-hosting{
+    position:relative;
+ }
+ .triangle1{
+    position:absolute;
+    align-content: center;
+    right:80px;
+}   
  
  .white{
     color:#cebdb3;
     /* text-align: center; */
     background-color: #ffffff;
     border:2px solid #e2dada;
-    padding:5px;
+    padding:10px;
     justify-content: center;
  }
  .pink{
@@ -251,50 +262,63 @@
     text-align: center;
     background-color: #f5f0f0;
     border:2px solid #e2dada;
-    padding:5px;
+    padding: 10px;
 }
  
  .user{
+    
     background-color: #6f6c8a;
      border:1px solid #6f6c8a;
      padding:20px;
     
  }
  .user-price{
+    
     color:#ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
  }
+ .user-hosting{
+    position: relative;
+ }
+ .triangle2{
+    position:absolute;
+    right:80px;
+}   
  .user-b1 {
     border-bottom: 2px solid white;
-     
-     text-align: center;
+    text-align: center;
     background-image:linear-gradient(to bottom, #cecdd3, #a29fae);
     background-size: 100%;
     -webkit-background-clip:text;
     -moz-background-clip:text;
     -webkit-text-fill-color:transparent;
     -moz-text-fill-color: transparent;
-    padding:10px;
+    padding:20px;
  }
  .pro-b1{
     border-bottom: 2px solid white;
-     
-     text-align: center;
+    text-align: center;
     background-image:linear-gradient(to bottom, #cecdd3, #a29fae);
     background-size: 100%;
     -webkit-background-clip:text;
     -moz-background-clip:text;
     -webkit-text-fill-color:transparent;
     -moz-text-fill-color: transparent;
-    padding:10px;
+    padding:20px;
  }
 .pro-price{
     color:#ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
-
+.pro-hosting{
+    position: relative;
+}
+.triangle3{
+    position:absolute;
+    right:80px;
+}   
 .maxi-b1{
     border-bottom: 2px solid white;
     text-align: center;
@@ -304,14 +328,20 @@
     -moz-background-clip:text;
     -webkit-text-fill-color:transparent;
     -moz-text-fill-color: transparent;
-    padding:10px;
+    padding:20px;
 }
 .maxi-price{
     color:#ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
-    
+.maxi-hosting{
+    position: relative;
+}
+.triangle4{
+    position:absolute;
+    right:80px;
+}   
 
  /* END PRICING SECTION END PRICING SECTION */
  .solutions-section{
@@ -333,6 +363,7 @@
 }
 p{
     text-align: left;
+    font-family: Arial;
     background-image:linear-gradient(to bottom, #cecdd3, #a29fae);
     background-size: 100%;
     -webkit-background-clip:text;
@@ -386,7 +417,7 @@ ul{
  /* END SOLUTIONS SECTION END SOLUTIONS SECTION*/
  .logo-section{
     background-color: #5b5770;
-    height: 90px;
+    height: 100px;
     display: block;
   
  }
@@ -395,7 +426,7 @@ ul{
     background-color:#262336;
     display: flex;
     }
-.oxy-button{
+.oxy-buttonfoot{
     padding: 2px 6px .5px 6px;
     background:linear-gradient(to bottom,#706189,#5b5770);
     border:1px solid transparent;
@@ -405,7 +436,7 @@ ul{
     font-weight: 900;
     margin: 10px;
 }
-.exponent{
+.exponentfoot{
     font-weight: 100px;
     font-size: 9px;
 }
